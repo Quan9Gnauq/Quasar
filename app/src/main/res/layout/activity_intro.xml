@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/bgintro">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chào mừng bạn đến với QUASAR!"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:fontFamily="serif"
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tựa game này đang trong quá trình thử nghiệm, nếu gặp phải lỗi thì đừng lo vì đó là tính năng."
+            android:textSize="18sp"
+            android:textColor="#FF1200"
+            android:fontFamily="serif"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edtPlayerName"
+            android:hint="Nhập tên người chơi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/btnStart"
+            android:text="Bắt đầu"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/khung1"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
