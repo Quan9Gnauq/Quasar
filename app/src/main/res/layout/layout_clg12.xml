@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/khung1">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/main_deck12">
+        <ImageView
+            android:id="@+id/pick_card"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:srcCompat="@drawable/ic_pickcard"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:focusable="true"/>
+        <ImageView
+            android:id="@+id/ic_main"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:srcCompat="@drawable/avt_1" />
+        <ImageView
+            android:id="@+id/nor_atk"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:srcCompat="@drawable/ic_atk"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ic_boss11"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:srcCompat="@drawable/boss12"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:id="@+id/main_hp"
+        android:text="10"
+        android:background="@drawable/bg_hp"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:fontFamily="serif"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/main_deck12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:id="@+id/boss11_hp"
+        android:text="10"
+        android:background="@drawable/bg_hp"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:fontFamily="serif"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/ic_boss11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imgFireball"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/a_flame"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggalery">
+
+
+    <TextView
+        android:id="@+id/txtExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trở lại"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:fontFamily="serif"
+        android:background="#3C3F51B5"
+        android:padding="12dp"/>
+
+    <GridView
+        android:id="@+id/gridCards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:padding="8dp"/>
+</LinearLayout>
